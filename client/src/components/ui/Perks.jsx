@@ -2,9 +2,9 @@ import React from 'react';
 
 const Perks = ({ selected, handleFormData }) => {
   return (
-    <div className="mt-2 grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-6">
+    <div className="mt-2 text-white grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-6">
       <label
-        className="flex cursor-pointer items-center gap-2 rounded-2xl border p-4"
+        className="flex  cursor-pointer items-center gap-2 rounded-2xl border p-4"
         key="perks"
       >
         <input

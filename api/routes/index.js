@@ -17,7 +17,7 @@ router.post('/upload-by-link', async (req, res) => {
   try {
     const { link } = req.body;
     let result = await cloudinary.uploader.upload(link, {
-      folder: 'Airbnb/Places',
+      folder: 'NestAway/Places',
     });
     res.json(result.secure_url);
   } catch (error) {
@@ -36,7 +36,7 @@ router.post('/upload', upload.array('photos', 100), async (req, res) => {
     for (let index = 0; index < req.files.length; index++) {
       let { path } = req.files[index];
       let result = await cloudinary.uploader.upload(path, {
-        folder: 'Airbnb/Places',
+        folder: 'NestAway/Places',
       });
       imageArray.push(result.secure_url);
     }

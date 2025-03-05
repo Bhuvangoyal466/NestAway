@@ -1,107 +1,63 @@
-# Airbnb Clone
+# NestAway
 
 ## Overview
 
-This project is a full-stack web application developed as a clone of Airbnb using the MERN stack (MongoDB, Express.js, React.js, Node.js). It aims to replicate the core functionality of Airbnb, allowing users to search for accommodations, view details, make bookings, and manage their listings.
+NestAway is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a seamless platform for users to find and book accommodations, manage listings, and explore stays with ease.
 
-## Getting Started
+This repository is private and intended for personal use and demonstration purposes only.
 
-1. **Clone the Repository:**
+## Project Details
 
-   ```bash
-   git clone https://github.com/rahul4019/airbnb-clone.git
+1. **User authentication:**
 
-   ```
+   - Secure signup, login, and logout with password hashing.
 
-2. **Install dependencies:**
 
-   Navigate to client directory and install frontend dependencies using yarn
+2. **Google login:**
 
-   ```
-   yarn install
-   ```
+   - Enables users to authenticate using Google.
 
-   Similary navigate to api folder and install backend dependencies
 
-   ```
-   yarn install
-   ```
+3. **Search functionality:**
 
-3. **ENV variables:**
+   - Users can filter and search for properties based on location, price, and amenities.
 
-   - create .env file in the client folder and add these variables
 
-     #### VITE_BASE_URL= http://localhost:4000
+4. **Booking system:**
 
-     #### VITE_GOOGLE_CLIENT_ID= your google client id
+   - Users can book accommodations based on availability and duration.
+   
+5. **Cloudinary integration:**
 
-   - create .env file in the api folder and add these variables
+   - Image hosting and management for property photos.
+   
+6. **JWT authentication:**
 
-     #### PORT= 4000
+   - Secure access control with JSON Web Tokens.
+   
+7. **Fully responsive UI**
 
-     #### DB_URL= your db url
+   - Optimized for mobile and desktop devices.
 
-     #### JWT_SECRET= your secret (string)
+## Tech stack used
 
-     #### JWT_EXPIRY= 20d
+- **MongoDB:**  NoSQL database for storing user and property data.
 
-     #### COOKIE_TIME= 7
+- **Express.js:**  Backend framework for handling API requests.
 
-     #### SESSION_SECRET= your secret session (string)
+- **React.js:** Frontend library for building the UI.
 
-     #### CLOUDINARY_NAME= your secret session
+- **Node.js:** JavaScript runtime for backend development.
 
-     #### CLOUDINARY_API_KEY= your cloudinary key
+- **Tailwind CSS:** Modern UI styling framework.
 
-     #### CLOUDINARY_API_SECRET= your cloudinary api secret
+- **Shadcn:** - UI components built on Tailwind CSS.
 
-     #### CLIENT_URL= http://localhost:5173
+- **Google Cloud:** - Google authentication integration.
 
-4. **Run project:**
-   - Open terminal, navigate to client directory and run below command to start frontend
-   ```
-       yarn run dev
-   ```
-   - Open another terminal, navigate to api directory and run this command to start backend server
-   ```
-       yarn start
-   ```
 
-## Features
+## Note
 
-- **User Authentication:** Users can sign up, log in, and log out securely. Passwords are hashed for security.
-- **Google Login:** Users can sign up and log in using their gmail.
-
-  ![Airbnb Logo](client/public/assets/auth.png)
-
-- **Search Listings:** Users can search for accommodations.
-
-  ![Airbnb Logo](client/public/assets/search.png)
-
-- **View Listings:** Users can view detailed information about each accommodation, including photos, descriptions, amenities.
-
-  ![Airbnb Logo](client/public/assets/view.png)
-
-- **Make Bookings:** Authenticated users can book accommodations for specific dates.
-
-  ![Airbnb Logo](client/public/assets/book.png)
-
-- **Manage Listings:** Hosts can create, edit, and delete their listings.
-
-  ![Airbnb Logo](client/public/assets/manage.png)
-
-- **Responsive Design:** The application is designed to be responsive and work seamlessly across different devices.
-
-  ![Airbnb Logo](client/public/assets/hero.png)
-
-## Technologies Used
-
-- **MongoDB:** NoSQL database for storing user data, listings.
-- **Express.js:** Web application framework for building the backend server.
-- **React.js:** JavaScript library for building the user interface.
-- **Node.js:** JavaScript runtime environment for executing server-side code.
-- **Tailwind CSS:** A utility-first CSS framework
-- **Shadcn:** UI library for styling based on Tailwind CSS
-- **JWT:** JSON Web Tokens for secure user authentication.
-- **Cloudinary:** Cloud-based image management for storing and serving images.
-- **Google Cloud:** For gmail based authentication
+This repository is private and will not be made public.
+It is meant for personal use and recruiter demonstrations only.
+Cloning and external access are restricted.

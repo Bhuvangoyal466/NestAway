@@ -113,8 +113,8 @@ const PlacesFormPage = () => {
   const preInput = (header, description) => {
     return (
       <>
-        <h2 className="mt-4 text-2xl">{header}</h2>
-        <p className="text-sm text-gray-500">{description}</p>
+        <h2 className="mt-10 text-white mb-2 text-2xl">{header}</h2>
+        <p className="text-sm mb-4 text-gray-200">{description}</p>
       </>
     );
   };
@@ -178,7 +178,7 @@ const PlacesFormPage = () => {
           placeholder="address"
         />
 
-        {preInput('Photos', 'more = better')}
+        {preInput('Photos', 'Add atleast 5-6 photos')}
 
         <PhotosUploader
           addedPhotos={addedPhotos}
@@ -209,7 +209,7 @@ const PlacesFormPage = () => {
         )}
         <div className="grid gap-2 sm:grid-cols-2 md:grid-cols-4">
           <div>
-            <h3 className="mt-2 -mb-1">Max no. of guests</h3>
+            <h3 className="mt-2 text-white mb-1">Max no. of guests</h3>
             <input
               type="text"
               name="maxGuests"
@@ -219,7 +219,7 @@ const PlacesFormPage = () => {
             />
           </div>
           <div>
-            <h3 className="mt-2 -mb-1">Price per night</h3>
+            <h3 className="mt-2 text-white mb-1">Price per night</h3>
             <input
               type="number"
               name="price"
@@ -229,7 +229,7 @@ const PlacesFormPage = () => {
             />
           </div>
         </div>
-        <button className="mx-auto my-4 flex rounded-full bg-primary py-3 px-20 text-xl font-semibold text-white">
+        <button className="mx-auto my-4 glass-button flex rounded-full bg-[#23335C] py-3 px-20 text-xl font-semibold text-white">
           Save
         </button>
       </form>

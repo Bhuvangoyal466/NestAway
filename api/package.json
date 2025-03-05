@@ -1,7 +1,7 @@
 {
-  "name": "airbnb-api",
+  "name": "nestaway-api",
   "version": "1.0.0",
-  "description": "API for airbnb clone app",
+  "description": "API for Nestaway",  
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -10,7 +10,7 @@
     "api",
     "backend"
   ],
-  "author": "rahul4019",
+  "author": "Bhuvan Goyal",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

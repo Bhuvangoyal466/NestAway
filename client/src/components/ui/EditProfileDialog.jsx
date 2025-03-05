@@ -84,7 +84,7 @@ const EditProfileDialog = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-blue-600 hover:bg-blue-600 ">
+        <Button className=" glass-button hover:text-black  hover:bg-gray-400 text-white ">
           <PenSquare className="mr-2 h-4 w-4" />
           Edit Profile
         </Button>
@@ -120,7 +120,7 @@ const EditProfileDialog = () => {
 
         {/* Update form */}
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="grid grid-cols-4 items-center gap-4 ">
             <Label htmlFor="name" className="text-right">
               Name
             </Label>

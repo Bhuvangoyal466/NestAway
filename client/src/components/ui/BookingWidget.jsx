@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import { useAuth } from '../../../hooks';
 import axiosInstance from '@/utils/axios';
 import DatePickerWithRange from './DatePickerWithRange';
+import GlassInput from './GlassInput';
 
 const BookingWidget = ({ place }) => {
   const [dateRange, setDateRange] = useState({ from: null, to: null });
@@ -87,17 +88,17 @@ const BookingWidget = ({ place }) => {
   }
 
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-xl">
-      <div className="text-center text-xl">
+    <div className="glass-button rounded-2xl bg-white bg-white/10 p-4 px-6  py-3 text-lg font-semibold  ">
+      <div className=" text-center text-xl text-white">
         Price: <span className="font-semibold">₹{place.price}</span> / per night
       </div>
       <div className="mt-4 rounded-2xl border">
-        <div className="flex w-full ">
+        <div className="m-3 ml-1 flex w-full justify-center">
           <DatePickerWithRange setDateRange={setDateRange} />
         </div>
-        <div className="border-t py-3 px-4">
-          <label>Number of guests: </label>
-          <input
+        <div className="border-t px-4 py-3">
+          <label className=" text-white">Number of guests: </label>
+          <GlassInput
             type="number"
             name="noOfGuests"
             placeholder={`Max. guests: ${place.maxGuests}`}
@@ -107,24 +108,25 @@ const BookingWidget = ({ place }) => {
             onChange={handleBookingData}
           />
         </div>
-        <div className="border-t py-3 px-4">
-          <label>Your full name: </label>
-          <input
+        <div className="border-t px-4 py-3">
+          <label className="text-white">Your full name: </label>
+          <GlassInput
             type="text"
             name="name"
             value={name}
             onChange={handleBookingData}
           />
-          <label>Phone number: </label>
-          <input
+          <label className="text-white">Phone number: </label>
+          <GlassInput
             type="tel"
             name="phone"
             value={phone}
+            placeholder="10 digit phone number"
             onChange={handleBookingData}
           />
         </div>
       </div>
-      <button onClick={handleBooking} className="primary mt-4">
+      <button onClick={handleBooking} className="ml-12 bg-transparent justify-center  mt-4 glass-button">
         Book this place
         {numberOfNights > 0 && <span> ₹{numberOfNights * place.price}</span>}
       </button>

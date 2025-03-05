@@ -9,7 +9,7 @@ const PlaceGallery = ({ place }) => {
         <div className="grid gap-4 bg-white px-2 py-20 md:p-8">
           <div>
             <button
-              className="fixed right-2 top-8 flex gap-1 rounded-2xl bg-white py-2 px-4 text-black shadow-sm shadow-gray-500 md:right-12"
+              className="fixed right-2 top-8 flex gap-1 rounded-2xl bg-white px-4 py-2 text-black shadow-sm shadow-gray-500 md:right-12"
               onClick={() => setShowAllPhotos(false)}
             >
               <svg
@@ -130,7 +130,7 @@ const PlaceGallery = ({ place }) => {
       </div>
 
       <button
-        className="absolute bottom-2 right-2 flex gap-1 rounded-xl bg-white py-2 px-4 shadow-md shadow-gray-500 "
+        className="glass-button text-white mt-6 flex gap-1 rounded-xl bg-white px-4 py-2 shadow-md shadow-gray-500"
         onClick={() => setShowAllPhotos(true)}
       >
         <svg

@@ -12,15 +12,18 @@ const AccountNav = () => {
     let classes =
       'flex justify-center mx-10 md:mx-0 gap-1 py-2 px-6 rounded-full';
     if (type === subpage) {
-      classes += ' bg-primary text-white';
+      classes += ' bg-[#23335C] text-white';
     } else {
       classes += ' bg-gray-200';
     }
     return classes;
   };
   return (
-    <nav className="mt-24 mb-8 flex w-full flex-col justify-center gap-2 p-8 md:flex-row md:p-0">
-      <Link className={linkClases('profile')} to={'/account'}>
+    <nav className="mb-8 mt-24 flex w-full flex-col justify-center gap-2 p-8 md:flex-row md:p-0">
+      <Link
+        className={`${linkClases('profile')} glass-button text-white`}
+        to={'/account'}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -37,7 +40,7 @@ const AccountNav = () => {
         </svg>
         My Profile
       </Link>
-      <Link className={linkClases('bookings')} to={`/account/bookings`}>
+      <Link className={`${linkClases('bookings')} glass-button text-white`} to={`/account/bookings`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -54,7 +57,7 @@ const AccountNav = () => {
         </svg>
         My bookings
       </Link>
-      <Link className={linkClases('places')} to={'/account/places'}>
+      <Link className={`${linkClases('places')} glass-button text-white`} to={'/account/places'}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

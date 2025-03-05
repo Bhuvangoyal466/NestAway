@@ -52,7 +52,7 @@ input[type='email'],
 input[type='number'],
 input[type='tel'],
 textarea {
-  @apply my-2 w-full rounded-[10px] border py-2 px-3;
+  @apply my-2 w-full rounded-[10px] border px-3 py-2;
 }
 
 textarea {
@@ -64,7 +64,7 @@ button {
 }
 
 button.primary {
-  @apply w-full rounded-[10px] bg-primary p-2 text-white;
+  @apply w-full rounded-[10px] bg-[#23335C] p-2 text-white;
 }
 
 button.social {
@@ -73,4 +73,44 @@ button.social {
 
 .card {
   @apply h-[410px] w-[327px] sm:h-[500px] sm:w-[435px] md:h-[400px] md:w-[350px] lg:h-[400px] lg:w-[330px] xl:h-[350px] xl:w-[300px];
+}
+
+.glass-card {
+  @apply relative flex flex-col items-center justify-center overflow-hidden 
+         rounded-xl border border-white/30 bg-white/10 p-4 shadow-lg 
+         backdrop-blur-md transition-transform duration-300 ease-in-out;
+  width: 300px; /* Fixed width */
+  height: 400px; /* Fixed height */
+}
+
+.glass-card img {
+  @apply h-[250px] w-full rounded-lg object-cover; /* Fixed height for images */
+}
+
+.glass-card .item {
+  @apply translate-y-0 transform text-center opacity-100 transition-none; /* Always visible */
+}
+
+.glass-input {
+  @apply relative mb-3 flex items-center justify-center 
+         overflow-hidden rounded-xl bg-white/10 p-3 
+         shadow-lg backdrop-blur-md transition-transform duration-300 ease-in-out;
+  width: 100%;
+  height: 50px;
+}
+
+.glass-input-field {
+  @apply h-full w-full border-none bg-transparent px-4 
+         text-lg text-white placeholder-gray-300 outline-none 
+         ring-0 focus:border-none focus:outline-none focus:ring-0;
+}
+
+.glass-button {
+  @apply relative overflow-hidden rounded-xl 
+         bg-white/10 px-6 py-3 text-lg font-semibold 
+         shadow-lg backdrop-blur-md transition-all duration-300 ease-in-out;
+}
+
+.glass-button:hover {
+  @apply scale-105 bg-white/20 shadow-xl;
 }

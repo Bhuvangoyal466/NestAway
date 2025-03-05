@@ -50,7 +50,10 @@ const ProfilePage = () => {
               {user.picture ? (
                 <AvatarImage src={user.picture} />
               ) : (
-                <AvatarImage src="https://res.cloudinary.com/rahul4019/image/upload/v1695133265/pngwing.com_zi4cre.png" className="object-cover"/>
+                <AvatarImage
+                  src="https://res.cloudinary.com/divjsroxw/image/upload/v1698205532/journeyscape_DEV/f7ij6fte64btdmkzdhbx.jpg"
+                  className="object-cover"
+                />
               )}
 
               <AvatarFallback>{user.name.slice([0], [1])}</AvatarFallback>
@@ -63,15 +66,15 @@ const ProfilePage = () => {
               <div className="flex items-center gap-2">
                 <Text height="18" width="18" />
                 <div className="text-xl">
-                  <span>Name: </span>
-                  <span className="text-gray-600">{user.name}</span>
+                  <span className="text-white">Name: </span>
+                  <span className="text-gray-200">{user.name}</span>
                 </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail height="18" width="18" />
                 <div className="text-xl">
-                  <span>Email: </span>
-                  <span className="text-gray-600">{user.email}</span>
+                  <span className="text-white">Email: </span>
+                  <span className="text-gray-200">{user.email}</span>
                 </div>
               </div>
               <p></p>
@@ -82,7 +85,7 @@ const ProfilePage = () => {
               {/* <Button varient="secondary">Edit profile</Button> */}
               <EditProfileDialog />
 
-              <Button variant="secondary" onClick={handleLogout}>
+              <Button className="glass-button text-white hover:text-black" variant="secondary" onClick={handleLogout}>
                 <LogOut className="mr-2 h-4 w-4" />
                 Logout
               </Button>
